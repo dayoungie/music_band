@@ -5,6 +5,7 @@
 }
 
 html {
+    scroll-behavior: smooth ;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -31,7 +32,7 @@ html {
 }
 
 .text-center {
-   text-align: center !important;
+    text-align: center !important;
 }
 
 .row {
@@ -69,6 +70,24 @@ html {
 
 .col-full {
     width: 100%;
+}
+
+.pull-right {
+    float: right;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: black;
 }
 
 /* Main */
@@ -209,7 +228,7 @@ html {
 
 #content .content-section {
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
     /* margin-bottom: 64px; */
@@ -296,7 +315,6 @@ html {
 
 .place-container {
     margin-top: 32px;
-    margin-bottom: 48px;
 }
 
 
@@ -329,17 +347,6 @@ html {
     padding-bottom: 8px;
 }
 
-.place-buy-btn {
-    background-color: black;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-.place-buy-btn:hover {
-    background-color: #ccc;
-    color: black;
-}
 
 /* Contact form */
 .contact-content {
@@ -367,22 +374,44 @@ html {
     /* outline: none; */
 }
 
-.contact-form .form-submit-btn {
-    background-color: black;
-    color: white;
-    border: 1px solid black;
-    padding: 10px 16px;
-    float: right;
+/* Map Section */
+.map-section img {
+    width: 100%;
+    filter: grayscale(50%);
 }
 
-.contact-form .form-submit-btn:hover {
-    background-color: #ccc;
-    color: black;
-    border: none;
-}
 /* Footer Section */
-#footer {}
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
 
+#footer .socials-list {
+    font-size: 24px;
+}
+
+#footer .socials-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+#footer .socials-list a:hover, #footer .copyright a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
+/* Modal */
 .modal {
     position: fixed;
     top: 0;
@@ -487,12 +516,12 @@ html {
 @keyframes modalFaceIn {
     from {
         opacity: 0;
-        transform: translateY(-140px) ;
+        transform: translateY(-140px);
     }
+
     to {
         opacity: 1;
-        transform: translateY(0) ;
+        transform: translateY(0);
 
     }
 }
-

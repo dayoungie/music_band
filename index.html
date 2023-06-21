@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://i.pinimg.com/564x/40/05/3c/40053c26ff6034264c52f13377bfd5eb.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
     <title>w3 band</title>
@@ -15,18 +16,18 @@
         <div id="header">
             <!-- Begin: Nav -->
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="">
                         More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -51,7 +52,7 @@
 
         <div id="content">
             <!-- About Section -->
-            <div class="content-section">
+            <div id="band" class="content-section">
                 <h2 class="content-heading">THE BAND</h2>
                 <p class="content-sub-heading">We love music</p>
                 <p class="about">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
@@ -80,7 +81,7 @@
             </div>
 
             <!--Tour Section -->
-            <div class="tour-section">
+            <div id="tour" class="tour-section">
                 <div class="content-section">
                     <h2 class="content-heading text-white">TOUR DATES</h2>
                     <p class="content-sub-heading text-white">Remember to book your tickets!</p>
@@ -96,7 +97,7 @@
                                 <h3 class="place-name">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-detail">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="col col-third">
@@ -105,7 +106,7 @@
                                 <h3 class="place-name">Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-detail">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
                             </div>
 
                         </div>
@@ -115,7 +116,7 @@
                                 <h3 class="place-name">San Francisco</h3>
                                 <p class="place-time">Sun 29 Nov 2016</p>
                                 <p class="place-detail">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
                             </div>
 
                         </div>
@@ -125,8 +126,8 @@
 
             </div>
 
-            <!-- Contact Section -->
-            <div class="content-section">
+            <!--Begin: Contact Section -->
+            <div id="contact" class="content-section">
                 <h2 class="content-heading">CONTACT</h2>
                 <p class="content-sub-heading">Fan? Drop a note!</p>
 
@@ -148,20 +149,37 @@
                             </div>
                             <div class="row mt-8">
                                 <div class="col col-full">
-                                    <input type="text" name="" id="" placeholder="Message" required class="form-control">
+                                    <input type="text" name="" id="" placeholder="Message" required
+                                        class="form-control">
                                 </div>
                             </div>
-                            <input class="form-submit-btn mt-16" type="submit" value="SEND">
+                            <input class="btn pull-right mt-16" type="submit" value="SEND">
                         </form>
                     </div>
                 </div>
 
             </div>
+            <!--End: Contact Section -->
+
+            <div class="map-section">
+                <img src="./assets/img/map.jpg" alt="map">
+            </div>
+
         </div>
 
     </div>
+    <!-- Begin: Footer -->
 
     <div id="footer">
+        <div class="socials-list">
+            <a href=""><i class="ti-facebook"></i></a>
+            <a href=""><i class="ti-instagram"></i></a>
+            <a href=""><i class="ti-linux"></i></a>
+            <a href=""><i class="ti-pinterest-alt"></i></a>
+            <a href=""><i class="ti-twitter-alt"></i></a>
+            <a href=""><i class="ti-linkedin"></i></a>
+        </div>
+        <p class="copyright">Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
 
     </div>
     </div>
@@ -233,3 +251,4 @@
 </body>
 
 </html>
+
