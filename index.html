@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://i.pinimg.com/564x/40/05/3c/40053c26ff6034264c52f13377bfd5eb.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="https://i.pinimg.com/564x/40/05/3c/40053c26ff6034264c52f13377bfd5eb.jpg"
+        type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
     <title>w3 band</title>
 </head>
@@ -20,7 +22,7 @@
                 <li><a href="#band">Band</a></li>
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="">
+                <li><a href="#">
                         More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
@@ -33,11 +35,15 @@
             </ul>
             <!-- End: Nav -->
 
-            <!-- Begin: Search button -->
+            <!--Search button -->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
             </div>
-            <!-- End: Search button -->
+
+            <!-- Menu btn -->
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
 
 
         </div>
@@ -64,15 +70,15 @@
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                     commodo consequat.</p>
                 <div class="row members-list">
-                    <div class="col col-third text-center">
+                    <div class="col col-third s-col-full mt-32 text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/band/member1.jpg" alt="" class="member-img">
                     </div>
-                    <div class="col col-third text-center">
+                    <div class="col col-third s-col-full mt-32 text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/band/member1.jpg" alt="" class="member-img">
                     </div>
-                    <div class="col col-third text-center">
+                    <div class="col col-third s-col-full mt-32 text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/band/member1.jpg" alt="" class="member-img">
                     </div>
@@ -91,32 +97,32 @@
                         <li>November <span class="quantity">3</span></li>
                     </ul>
                     <div class="row place-container">
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/place/NY.jpg" alt=":NY" class="place-img">
                             <div class="place-info">
                                 <h3 class="place-name">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-detail">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket s-full-width">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/place/Paris.jpg" alt="Paris" class="place-img">
                             <div class="place-info">
                                 <h3 class="place-name">Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-detail">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket s-full-width">Buy Tickets</button>
                             </div>
 
                         </div>
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/place/SF.jpg" alt="SF" class="place-img">
                             <div class="place-info">
                                 <h3 class="place-name">San Francisco</h3>
                                 <p class="place-time">Sun 29 Nov 2016</p>
                                 <p class="place-detail">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket s-full-width">Buy Tickets</button>
                             </div>
 
                         </div>
@@ -132,18 +138,18 @@
                 <p class="content-sub-heading">Fan? Drop a note!</p>
 
                 <div class="row contact-content">
-                    <div class="col col-half contact-info">
+                    <div class="col col-half s-col-full contact-info">
                         <p><i class="ti-location-pin"></i>Chicago, US</p>
-                        <p><i class="ti-mobile"></i>Phone: +00 151515</p>
-                        <p><i class="ti-email"></i>Email: mail@mail.com</p>
+                        <p><i class="ti-mobile"></i>Phone: <a href="tel:+00 151515">+00 151515</a></p>
+                        <p><i class="ti-email"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
                     </div>
-                    <div class="col col-half contact-form">
+                    <div class="col col-half s-col-full contact-form">
                         <form action="">
                             <div class="row">
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full">
                                     <input type="text" name="" id="" placeholder="Name" required class="form-control">
                                 </div>
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full s-mt-8">
                                     <input type="email" name="" id="" placeholder="Email" required class="form-control">
                                 </div>
                             </div>
@@ -153,7 +159,7 @@
                                         class="form-control">
                                 </div>
                             </div>
-                            <input class="btn pull-right mt-16" type="submit" value="SEND">
+                            <input class="contact-submit-btn btn pull-right mt-16 s-full-width" type="submit" value="SEND">
                         </form>
                     </div>
                 </div>
@@ -220,7 +226,6 @@
         const modal = document.querySelector('.js-modal')
         const modalContainer = document.querySelector('.js-modal-container')
         const closeBtn = document.querySelector('.js-modal-close')
-
         //Function show modal (add class open)
         function showBuyTickets() {
             modal.classList.add('open')
@@ -247,8 +252,37 @@
 
         })
 
+        //Listen to the click on Menu-icon
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+        mobileMenu.onclick = function () {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto'
+            } else {
+                header.style.height = null
+            }
+
+        }
+
+        // Tự động đóng khi chọn 1 trong các menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            menuItem.onclick = function (event) {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav')
+                if (isParentMenu) {
+                    event.preventDefault();
+                } else {
+                    header.style.height = null
+                }
+            }
+        }
+
+
     </script>
 </body>
 
 </html>
-

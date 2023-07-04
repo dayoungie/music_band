@@ -54,6 +54,10 @@ html {
     margin-top: 16px !important;
 }
 
+.mt-32 {
+    margin-top: 32px;
+}
+
 .col {
     float: left;
     padding-left: 8px;
@@ -83,6 +87,7 @@ html {
     text-decoration: none;
     border: none;
     cursor: pointer;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -101,6 +106,7 @@ html {
     right: 0;
     background-color: black;
     height: 46px;
+    /* max-width: 100vw; */
 
 }
 
@@ -120,12 +126,8 @@ html {
 #header .search-btn {
     float: right;
     font-size: 20px;
-    padding: 0 21px;
-}
-
-#header .search-btn:hover {
-    background-color: #F44336;
-    cursor: pointer;
+    padding: 0px 21px;
+    display: block;
 }
 
 #header .search-icon {
@@ -134,7 +136,38 @@ html {
     font-weight: bolder;
 }
 
-#header #nav li {
+#header .search-btn:hover {
+    background-color: #F44336;
+    cursor: pointer;
+}
+
+#header .mobile-menu-btn {
+    float: right;
+    font-size: 20px;
+    padding: 11px 21px;
+}
+
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .menu-icon {
+    color: white;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color:#000;
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+
+#nav li {
     position: relative;
     display: inline-block;
 
@@ -192,7 +225,7 @@ html {
 
 #slider {
     position: relative;
-    background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+    background: url('../img/slider/slider1.jpg') top center / cover no-repeat;
     margin-top: 46px;
     padding-top: 50%;
     /* khi đặt giá trị % thì có nghĩa là 50% của chiều rộng của chính nó */
@@ -217,6 +250,7 @@ html {
 
 #slider .text-description {
     font-size: 15px;
+    text-shadow: 0 0 1px black;
 }
 
 /* .text-heading, .text-description {
@@ -228,10 +262,12 @@ html {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
-    /* margin-bottom: 64px; */
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .content-heading {
@@ -257,7 +293,7 @@ html {
 }
 
 #content .members-list {
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 
@@ -314,7 +350,7 @@ html {
 }
 
 .place-container {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 
@@ -362,6 +398,16 @@ html {
     width: 30px;
     display: inline-block;
 }
+
+.contact-info a {
+    color: #0000ef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
+}
+
 
 .contact-form {
     font-size: 15px;
@@ -524,4 +570,21 @@ html {
         transform: translateY(0);
 
     }
+}
+
+/* RESPONSIVE */
+/* PC: w >= 1024pc
+Tablet: w >= 740px & w < 1024px
+Mobile: w < 740px */
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    #header .search-btn {
+        padding: 0 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    
 }
