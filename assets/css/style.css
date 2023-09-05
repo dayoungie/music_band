@@ -306,7 +306,9 @@ html {
 
 #content .member-img {
     width: 154px;
+    height: 206px;
     border-radius: 4px;
+    object-fit: cover;
 
 }
 
